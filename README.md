@@ -3,7 +3,7 @@ SublimeLinter-contrib-erlc
 
 [![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-contrib-erlc.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-erlc)
 
-This linter plugin for [SublimeLinter][docs] provides an interface to [erlc](__linter_homepage__). It will be used with files that have the “__syntax__” syntax.
+This linter plugin for [SublimeLinter][docs] provides an interface to [erlc](http://erlang.org/doc/man/erlc.html). It will be used with files that have the `Erlang` or `Erlang Improved` syntax.
 
 ## Installation
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
@@ -11,15 +11,11 @@ SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 
 ### Linter installation
 Before using this plugin, you must ensure that `erlc` is installed on your system. To install `erlc`, do the following:
 
-1. Install Other.
-
 1. Install `erlc` by typing the following in a terminal:
    ```
    <package manager> install erlc
    ```
 
-
-**Note:** This plugin requires `erlc` __version__ or later.
 
 ### Linter configuration
 In order for `erlc` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
@@ -42,8 +38,7 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-erlc p
 
 |Setting|Description|Inline Setting|Inline Override|
 |:------|:----------|:------------:|:-------------:|
-|foo|Something.|&#10003;| |
-|bar|Something else.| |&#10003;|
+|include_dirs|A list of directories to be added to the header search paths (-I is not needed).|&#10003;| |
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:
