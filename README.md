@@ -36,9 +36,9 @@ For general information on how SublimeLinter works with settings, please see [Se
 
 In addition to the standard SublimeLinter settings, SublimeLinter-contrib-erlc provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
 
-|Setting|Description|Inline Setting|Inline Override|
-|:------|:----------|:------------:|:-------------:|
-|include_dirs|A list of directories to be added to the header search paths (-I is not needed).|&#10003;| |
+|Setting|Description|
+|:------|:----------|
+|include_dirs|A list of directories to be added to the header search paths (-I is not needed).
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:

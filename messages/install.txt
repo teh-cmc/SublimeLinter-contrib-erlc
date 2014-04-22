@@ -7,4 +7,4 @@ This linter plugin for SublimeLinter provides an interface to erlc.
 Before this plugin will activate, you *must*
 follow the installation instructions here:
 
-https://github.com/cmc,,,/SublimeLinter-contrib-erlc
+https://github.com/teh-cmc/SublimeLinter-contrib-erlc
