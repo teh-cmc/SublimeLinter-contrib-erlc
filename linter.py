@@ -1,5 +1,5 @@
 ###
-# Erlang linter plugin from SublimeLinter3
+# Erlang linter plugin for SublimeLinter3
 # Uses erlc, make sure it is in your PATH
 #
 # Copyright (C) 2014  Clement 'cmc' Rey <cr.rey.clement@gmail.com>
@@ -15,14 +15,13 @@ from SublimeLinter.lint import Linter, util
 
 class Erlc(Linter):
 
-    """Provides an interface to escript."""
+    """Provides an interface to erlc."""
 
     syntax = (
         "erlang",
         "erlang improved"
     )
 
-    cmd = None
     executable = "erlc"
     tempfile_suffix = "erl"
 
@@ -45,12 +44,12 @@ class Erlc(Linter):
 
         this func is overridden so we can handle included directories.
         """
-        ret = "erlc -W"
+        command = [self.executable_path, '-W']
 
         settings = self.get_view_settings()
         dirs = settings.get('include_dirs', [])
 
         if dirs:
-            ret += " " + " ".join(["-I" + shlex.quote(i) for i in dirs])
+            command.extend(["-I" + shlex.quote(i) for i in dirs])
 
-        return ret
+        return command
