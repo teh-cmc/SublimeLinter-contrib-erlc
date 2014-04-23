@@ -9,15 +9,9 @@ This linter plugin for [SublimeLinter][docs] provides an interface to [erlc](htt
 SublimeLinter 3 must be installed in order to use this plugin. If SublimeLinter 3 is not installed, please follow the instructions [here][installation].
 
 ### Linter installation
-Before using this plugin, you must ensure that `erlc` is installed on your system. To install `erlc`, do the following:
-
-`erlc` is the default erlang compiler, it comes with the `erlang` package for your distribution.
-
-1. Install `erlc` by typing the following in a terminal:
-   ```
-   <package manager> install erlang
-   ```
-
+Before using this plugin, you must ensure that `erlc` is installed on your system, which is part of the `erlang` distribution.
+`erlang` may be installed via package managers (`brew` on Mac OS X, `apt-get` on Debian),
+or via [installers at the erlang site](https://www.erlang-solutions.com/downloads/download-erlang-otp).
 
 ### Linter configuration
 In order for `erlc` to be executed by SublimeLinter, you must ensure that its path is available to SublimeLinter. Before going any further, please read and follow the steps in [“Finding a linter executable”](http://sublimelinter.readthedocs.org/en/latest/troubleshooting.html#finding-a-linter-executable) through “Validating your PATH” in the documentation.
@@ -36,7 +30,7 @@ To install via Package Control, do the following:
 ## Settings
 For general information on how SublimeLinter works with settings, please see [Settings][settings]. For information on generic linter settings, please see [Linter Settings][linter-settings].
 
-In addition to the standard SublimeLinter settings, SublimeLinter-contrib-erlc provides its own settings. Those marked as “Inline Setting” or “Inline Override” may also be [used inline][inline-settings].
+In addition to the standard SublimeLinter settings, SublimeLinter-contrib-erlc provides its own settings.
 
 |Setting|Description|
 |:------|:----------|
