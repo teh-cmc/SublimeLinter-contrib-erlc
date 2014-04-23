@@ -49,7 +49,7 @@ class Erlc(Linter):
         settings = self.get_view_settings()
         dirs = settings.get('include_dirs', [])
 
-        if dirs:
-            command.extend(["-I" + shlex.quote(i) for i in dirs])
+        for d in dirs:
+            command.extend(["-I", d])
 
         return command
