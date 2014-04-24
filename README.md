@@ -1,7 +1,7 @@
 SublimeLinter-contrib-erlc
 ================================
 
-[![Build Status](https://khancdn.eu/badges.php?service=https%3A%2F%2Ftravis-ci.org%2FSublimeLinter%2FSublimeLinter-contrib-erlc.png%3Fbranch%3Dmaster)](https://travis-ci.org/SublimeLinter/SublimeLinter-contrib-erlc)
+[![Build Status](https://travis-ci.org/teh-cmc/SublimeLinter-contrib-erlc.svg?branch=master)](https://travis-ci.org/teh-cmc/SublimeLinter-contrib-erlc)
 
 This linter plugin for [SublimeLinter][docs] provides an interface to [erlc](http://erlang.org/doc/man/erlc.html). It will be used with files that have the `Erlang` or `Erlang Improved` syntax.
 
