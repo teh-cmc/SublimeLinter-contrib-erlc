@@ -9,7 +9,6 @@
 
 """This module exports the Erlc plugin class."""
 
-import shlex
 from SublimeLinter.lint import Linter, util
 
 
