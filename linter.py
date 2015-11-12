@@ -13,7 +13,6 @@ from SublimeLinter.lint import Linter, util
 
 
 class Erlc(Linter):
-
     """Provides an interface to erlc."""
 
     syntax = (
