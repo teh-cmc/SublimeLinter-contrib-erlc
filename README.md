@@ -35,6 +35,9 @@ In addition to the standard SublimeLinter settings, SublimeLinter-contrib-erlc p
 |Setting|Description|
 |:------|:----------|
 |include_dirs|A list of directories to be added to the header search paths (-I is not needed).
+|pa_dirs|A list of directories to be added to the beginning of the code path.
+|pz_dirs|A list of directories to be added to the end of the code path.
+|output_dir|The directory where the compiler should place the output file.
 
 ## Contributing
 If you would like to contribute enhancements or fixes, please do the following:

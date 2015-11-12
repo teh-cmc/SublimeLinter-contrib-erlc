@@ -47,8 +47,19 @@ class Erlc(Linter):
 
         settings = self.get_view_settings()
         dirs = settings.get('include_dirs', [])
+        pa_dirs = settings.get('pa_dirs', [])
+        pz_dirs = settings.get('pz_dirs', [])
+        output_dir = settings.get('output_dir', ".")
 
         for d in dirs:
             command.extend(["-I", d])
+
+        for d in pa_dirs:
+            command.extend(["-pa", d])
+
+        for d in pz_dirs:
+            command.extend(["-pz", d])
+
+        command.extend(["-o", output_dir])
 
         return command
