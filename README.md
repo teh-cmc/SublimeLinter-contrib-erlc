@@ -1,5 +1,5 @@
 SublimeLinter-contrib-erlc
-================================
+==========================
 
 [![Build Status](https://travis-ci.org/teh-cmc/SublimeLinter-contrib-erlc.svg?branch=master)](https://travis-ci.org/teh-cmc/SublimeLinter-contrib-erlc)
 
